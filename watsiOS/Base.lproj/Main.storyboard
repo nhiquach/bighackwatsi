@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1708" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gnJ-nE-1iy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Watsi-->
+        <scene sceneID="zEL-U9-jXs">
+            <objects>
+                <tableViewController id="Tkt-pC-dh3" customClass="PatientProfileTableViewController" customModule="watsiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="AxE-aK-zQt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PatientCell" rowHeight="200" id="FsG-9H-B3J" customClass="PatientProfileTableViewCell" customModule="watsiOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FsG-9H-B3J" id="qAP-RW-H8J">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="goT-1N-vc0">
+                                            <rect key="frame" x="13" y="18" width="130" height="130"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="130" id="ayi-7s-Qyt"/>
+                                                <constraint firstAttribute="width" secondItem="goT-1N-vc0" secondAttribute="height" multiplier="1:1" id="xdJ-Nc-ISp"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name, Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1C-OR-DHs">
+                                            <rect key="frame" x="158" y="18" width="123" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0A-3t-zZj">
+                                            <rect key="frame" x="158" y="49" width="62" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YiW-WL-tDO">
+                                            <rect key="frame" x="13" y="167" width="450" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="450" id="a1Y-fU-a4X"/>
+                                                <constraint firstAttribute="height" constant="15" id="xHC-ei-R8s"/>
+                                            </constraints>
+                                            <color key="progressTintColor" red="0.50905080998378249" green="0.86014441287878785" blue="0.33430184048854128" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="trackTintColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </progressView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw4-Fs-hhX">
+                                            <rect key="frame" x="482" y="164" width="35" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Kioko is a father of three from Kenya who needs $1,500 to treat his infected bone." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-It-6N8">
+                                            <rect key="frame" x="158" y="71" width="415" height="77"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="goT-1N-vc0" firstAttribute="leading" secondItem="qAP-RW-H8J" secondAttribute="leadingMargin" constant="5" id="HWe-g0-MZj"/>
+                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="top" secondItem="v1C-OR-DHs" secondAttribute="bottom" constant="1" id="Hom-QC-VSN"/>
+                                        <constraint firstItem="v1C-OR-DHs" firstAttribute="top" secondItem="goT-1N-vc0" secondAttribute="top" id="RTw-c5-pu8"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fJG-It-6N8" secondAttribute="trailing" constant="19" id="Rm2-PF-hpi"/>
+                                        <constraint firstItem="Sw4-Fs-hhX" firstAttribute="centerY" secondItem="YiW-WL-tDO" secondAttribute="centerY" id="S1B-Fr-ByO"/>
+                                        <constraint firstItem="fJG-It-6N8" firstAttribute="top" secondItem="p0A-3t-zZj" secondAttribute="bottom" constant="1" id="SVr-7M-w5m"/>
+                                        <constraint firstItem="Sw4-Fs-hhX" firstAttribute="leading" secondItem="YiW-WL-tDO" secondAttribute="trailing" constant="19" id="V4t-kk-hY4"/>
+                                        <constraint firstItem="goT-1N-vc0" firstAttribute="top" secondItem="qAP-RW-H8J" secondAttribute="topMargin" constant="10" id="VJr-rI-PV1"/>
+                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="v1C-OR-DHs" secondAttribute="leading" id="bJf-uA-rUT"/>
+                                        <constraint firstItem="fJG-It-6N8" firstAttribute="leading" secondItem="p0A-3t-zZj" secondAttribute="leading" id="bfz-rA-jKJ"/>
+                                        <constraint firstItem="fJG-It-6N8" firstAttribute="centerY" secondItem="qAP-RW-H8J" secondAttribute="centerY" constant="10" id="cnJ-ze-ODJ"/>
+                                        <constraint firstItem="YiW-WL-tDO" firstAttribute="top" secondItem="goT-1N-vc0" secondAttribute="bottom" constant="19" id="gjM-dH-c7e"/>
+                                        <constraint firstItem="YiW-WL-tDO" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="leading" id="oID-pv-jhO"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="YiW-WL-tDO" secondAttribute="trailing" constant="129" id="qXn-JZ-F8O"/>
+                                        <constraint firstItem="v1C-OR-DHs" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="15" id="yrZ-zM-zvP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="countryLabel" destination="p0A-3t-zZj" id="eZP-pj-YGA"/>
+                                    <outlet property="donationProgressView" destination="YiW-WL-tDO" id="lD1-td-vTo"/>
+                                    <outlet property="goalLabel" destination="Sw4-Fs-hhX" id="iib-jr-nu7"/>
+                                    <outlet property="headerTextView" destination="fJG-It-6N8" id="Jd8-b1-Yo0"/>
+                                    <outlet property="nameAgeLabel" destination="v1C-OR-DHs" id="lqP-qa-eCO"/>
+                                    <outlet property="profilePictureImageView" destination="goT-1N-vc0" id="fKc-th-L4B"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tkt-pC-dh3" id="yka-8c-WPY"/>
+                            <outlet property="delegate" destination="Tkt-pC-dh3" id="O6L-92-pKP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Watsi" id="HJF-ed-23f"/>
+                    <connections>
+                        <segue destination="1Qq-JO-1UO" kind="showDetail" identifier="goToPatientDetail" action="showViewController:sender:" id="p44-eP-SXh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5e-YJ-LjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="356"/>
+        </scene>
+        <!--Patient Detail View Controller-->
+        <scene sceneID="Ma3-XE-Lj0">
+            <objects>
+                <viewController id="1Qq-JO-1UO" customClass="PatientDetailViewController" customModule="watsiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qMK-VA-eC4"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfL-Q6-f56"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JMi-E5-zx6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-JZ-ggM">
+                                <rect key="frame" x="187" y="53" width="227" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AGo-JZ-ggM" secondAttribute="height" multiplier="1:1" id="9nm-JT-nPL"/>
+                                    <constraint firstAttribute="height" constant="227" id="bkQ-Mn-Gpp"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYX-rj-V6f">
+                                <rect key="frame" x="31" y="315" width="525" height="241"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">I am scared about what could happen,” shares Maria. “But I am glad I have support." 36-year-old Maria lives in a rural region of Guatemala, and delights in caring for her seven children. Maria is currently expecting another baby. For three months Maria has not had regular menstruation, and 15 days ago she started to have hemorrhaging,” explains our medical partner, Wuqu’ Kawoq (WK). “Our medical team suspects she has an ectopic pregnancy based on the results of some preliminary lab tests. In an ectopic pregnancy, the fertilized egg remains in a woman’s fallopian tube instead of moving to the uterus to develop as it should. This means the fertilized egg will not survive, and that the mother is at serious risk for internal damage: for instance, the fallopian tube can rupture, causing dangerous bleeding. “Ectopic pregnancies are fatal to the mother if not treated,” explains WK. Fortunately, treatment is available for Maria. A surgical technique known as laparoscopy can be used to examine Maria’s pelvic organs through a small incision in her abdomen. Doctors will then use a small camera to locate and remove the fertilized egg from her fallopian tube.\r\n\r\nThis operation costs more than Maria and her husband, a day laborer, can afford—especially with seven children to support. But we can help. $977 will fund the surgery that Maria needs, as well as the lab tests and medication that will ensure she remains healthy after the operation. “This procedure will save Maria’s life,” says WK, “allowing her to be with her husband and seven children, and have a long and healthy life.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA2-EC-Nk5">
+                                <rect key="frame" x="275" y="285" width="50" height="30"/>
+                                <state key="normal" title="Donate">
+                                    <color key="titleColor" red="0.9137254901960784" green="0.396078431372549" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AGo-JZ-ggM" firstAttribute="centerX" secondItem="iA2-EC-Nk5" secondAttribute="centerX" id="4SC-b0-M96"/>
+                            <constraint firstItem="AGo-JZ-ggM" firstAttribute="top" secondItem="qMK-VA-eC4" secondAttribute="bottom" constant="33" id="6Ll-MQ-RsR"/>
+                            <constraint firstItem="wfL-Q6-f56" firstAttribute="top" secondItem="XYX-rj-V6f" secondAttribute="bottom" constant="44" id="BBZ-TE-jTX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XYX-rj-V6f" secondAttribute="trailing" constant="24" id="GQE-Ux-9jI"/>
+                            <constraint firstItem="XYX-rj-V6f" firstAttribute="top" secondItem="iA2-EC-Nk5" secondAttribute="bottom" id="ehj-pe-yck"/>
+                            <constraint firstItem="iA2-EC-Nk5" firstAttribute="centerX" secondItem="JMi-E5-zx6" secondAttribute="centerX" id="j1e-9k-rMb"/>
+                            <constraint firstItem="iA2-EC-Nk5" firstAttribute="top" secondItem="AGo-JZ-ggM" secondAttribute="bottom" constant="5" id="qdN-nG-AL2"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="600" height="600"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="XYX-rj-V6f" id="9fX-Pk-Rng"/>
+                        <outlet property="donateButton" destination="iA2-EC-Nk5" id="hhl-my-sce"/>
+                        <outlet property="patientImageView" destination="AGo-JZ-ggM" id="PGA-Z0-z4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQP-Zb-STB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="356"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fgy-sr-B0V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gnJ-nE-1iy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="baZ-6v-cg1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tkt-pC-dh3" kind="relationship" relationship="rootViewController" id="ZUe-oh-gki"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5f-1t-Sdc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="356"/>
+        </scene>
+    </scenes>
+</document>
