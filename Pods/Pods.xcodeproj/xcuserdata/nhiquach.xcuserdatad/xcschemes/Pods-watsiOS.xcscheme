@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DCFCD71616A1C15A54905C90'
+               BlueprintIdentifier = '936879A18CCFA30CEC3ED6E9'
                BlueprintName = 'Pods-watsiOS'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-watsiOS.a'>
+               BuildableName = 'Pods_watsiOS.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

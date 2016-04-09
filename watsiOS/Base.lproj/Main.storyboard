@@ -12,25 +12,33 @@
             <objects>
                 <tableViewController id="Tkt-pC-dh3" customClass="PatientProfileTableViewController" customModule="watsiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="AxE-aK-zQt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PatientCell" rowHeight="200" id="FsG-9H-B3J" customClass="PatientProfileTableViewCell" customModule="watsiOS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="200"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FsG-9H-B3J" id="qAP-RW-H8J">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="goT-1N-vc0">
+                                            <rect key="frame" x="13" y="18" width="120" height="120"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="2xc-v8-nJC"/>
+                                                <constraint firstAttribute="width" secondItem="goT-1N-vc0" secondAttribute="height" multiplier="1:1" id="Evj-4G-QTm"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="qRU-Kk-5E3"/>
+                                            </constraints>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name, Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1C-OR-DHs">
-                                            <rect key="frame" x="164" y="18" width="123" height="32"/>
+                                            <rect key="frame" x="148" y="18" width="123" height="32"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0A-3t-zZj">
-                                            <rect key="frame" x="164" y="50" width="62" height="21"/>
+                                            <rect key="frame" x="148" y="50" width="62" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -51,40 +59,31 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Kioko is a father of three from Kenya who needs $1,500 to treat his infected bone." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-It-6N8">
-                                            <rect key="frame" x="158" y="71" width="415" height="77"/>
+                                            <rect key="frame" x="141" y="71" width="436" height="83"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="goT-1N-vc0">
-                                            <rect key="frame" x="13" y="18" width="137" height="137"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="137" id="2xc-v8-nJC"/>
-                                                <constraint firstAttribute="width" secondItem="goT-1N-vc0" secondAttribute="height" multiplier="1:1" id="Evj-4G-QTm"/>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="qRU-Kk-5E3"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="v1C-OR-DHs" secondAttribute="leading" id="2nl-bi-rYr"/>
-                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="14" id="4cs-Mg-Wh2"/>
+                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="15" id="4cs-Mg-Wh2"/>
                                         <constraint firstItem="p0A-3t-zZj" firstAttribute="top" secondItem="qAP-RW-H8J" secondAttribute="top" constant="50" id="7KA-8f-Sbk"/>
                                         <constraint firstItem="fJG-It-6N8" firstAttribute="top" secondItem="p0A-3t-zZj" secondAttribute="bottom" id="DSM-Zd-AuI"/>
                                         <constraint firstItem="goT-1N-vc0" firstAttribute="leading" secondItem="qAP-RW-H8J" secondAttribute="leadingMargin" constant="5" id="HWe-g0-MZj"/>
                                         <constraint firstItem="p0A-3t-zZj" firstAttribute="top" secondItem="v1C-OR-DHs" secondAttribute="bottom" id="JPF-Xq-hdz"/>
                                         <constraint firstItem="fJG-It-6N8" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="8" id="M30-fl-qgR"/>
                                         <constraint firstItem="v1C-OR-DHs" firstAttribute="top" secondItem="goT-1N-vc0" secondAttribute="top" id="RTw-c5-pu8"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="fJG-It-6N8" secondAttribute="trailing" constant="19" id="Rm2-PF-hpi"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="fJG-It-6N8" secondAttribute="trailing" constant="15" id="Rm2-PF-hpi"/>
                                         <constraint firstItem="Sw4-Fs-hhX" firstAttribute="centerY" secondItem="YiW-WL-tDO" secondAttribute="centerY" id="S1B-Fr-ByO"/>
                                         <constraint firstItem="Sw4-Fs-hhX" firstAttribute="leading" secondItem="YiW-WL-tDO" secondAttribute="trailing" constant="15" id="V4t-kk-hY4"/>
                                         <constraint firstItem="goT-1N-vc0" firstAttribute="top" secondItem="qAP-RW-H8J" secondAttribute="topMargin" constant="10" id="VJr-rI-PV1"/>
-                                        <constraint firstItem="fJG-It-6N8" firstAttribute="centerY" secondItem="qAP-RW-H8J" secondAttribute="centerY" constant="10" id="cnJ-ze-ODJ"/>
-                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="qAP-RW-H8J" secondAttribute="leading" constant="164" id="dDs-Gq-nLR"/>
-                                        <constraint firstItem="YiW-WL-tDO" firstAttribute="top" secondItem="goT-1N-vc0" secondAttribute="bottom" constant="17" id="gjM-dH-c7e"/>
+                                        <constraint firstItem="fJG-It-6N8" firstAttribute="centerY" secondItem="qAP-RW-H8J" secondAttribute="centerY" constant="13" id="cnJ-ze-ODJ"/>
+                                        <constraint firstItem="YiW-WL-tDO" firstAttribute="top" secondItem="goT-1N-vc0" secondAttribute="bottom" constant="34" id="gjM-dH-c7e"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="YiW-WL-tDO" secondAttribute="trailing" constant="123" id="qXn-JZ-F8O"/>
                                         <constraint firstItem="YiW-WL-tDO" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="leading" id="ycy-HC-FGR"/>
-                                        <constraint firstItem="v1C-OR-DHs" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="14" id="yrZ-zM-zvP"/>
+                                        <constraint firstItem="v1C-OR-DHs" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="15" id="yrZ-zM-zvP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -102,6 +101,7 @@
                             <outlet property="delegate" destination="Tkt-pC-dh3" id="O6L-92-pKP"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="IPS-Fo-uJU"/>
                     <navigationItem key="navigationItem" title="Watsi" id="HJF-ed-23f"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <userDefinedRuntimeAttributes>
@@ -118,7 +118,6 @@
         <!--Patient Detail View Controller-->
         <scene sceneID="Ma3-XE-Lj0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nQP-Zb-STB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="1Qq-JO-1UO" customClass="PatientDetailViewController" customModule="watsiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qMK-VA-eC4"/>
@@ -138,7 +137,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYX-rj-V6f">
                                 <rect key="frame" x="31" y="344" width="525" height="212"/>
                                 <color key="backgroundColor" red="0.58039215690000001" green="0.7843137255" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">I am scared about what could happen,” shares Maria. “But I am glad I have support." 36-year-old Maria lives in a rural region of Guatemala, and delights in caring for her seven children. Maria is currently expecting another baby. For three months Maria has not had regular menstruation, and 15 days ago she started to have hemorrhaging,” explains our medical partner, Wuqu’ Kawoq (WK). “Our medical team suspects she has an ectopic pregnancy based on the results of some preliminary lab tests. In an ectopic pregnancy, the fertilized egg remains in a woman’s fallopian tube instead of moving to the uterus to develop as it should. This means the fertilized egg will not survive, and that the mother is at serious risk for internal damage: for instance, the fallopian tube can rupture, causing dangerous bleeding. “Ectopic pregnancies are fatal to the mother if not treated,” explains WK. Fortunately, treatment is available for Maria. A surgical technique known as laparoscopy can be used to examine Maria’s pelvic organs through a small incision in her abdomen. Doctors will then use a small camera to locate and remove the fertilized egg from her fallopian tube.\r\n\r\nThis operation costs more than Maria and her husband, a day laborer, can afford—especially with seven children to support. But we can help. $977 will fund the surgery that Maria needs, as well as the lab tests and medication that will ensure she remains healthy after the operation. “This procedure will save Maria’s life,” says WK, “allowing her to be with her husband and seven children, and have a long and healthy life.</mutableString>
+                                <string key="text">I am scared about what could happen,” shares Maria. “But I am glad I have support." 36-year-old Maria lives in a rural region of Guatemala, and delights in caring for her seven children. Maria is currently expecting another baby. For three months Maria has not had regular menstruation, and 15 days ago she started to have hemorrhaging,” explains our medical partner, Wuqu’ Kawoq (WK). “Our medical team suspects she has an ectopic pregnancy based on the results of some preliminary lab tests. In an ectopic pregnancy, the fertilized egg remains in a woman’s fallopian tube instead of moving to the uterus to develop as it should. This means the fertilized egg will not survive, and that the mother is at serious risk for internal damage: for instance, the fallopian tube can rupture, causing dangerous bleeding. “Ectopic pregnancies are fatal to the mother if not treated,” explains WK. Fortunately, treatment is available for Maria. A surgical technique known as laparoscopy can be used to examine Maria’s pelvic organs through a small incision in her abdomen. Doctors will then use a small camera to locate and remove the fertilized egg from her fallopian tube.\r\n\r\nThis operation costs more than Maria and her husband, a day laborer, can afford—especially with seven children to support. But we can help. $977 will fund the surgery that Maria needs, as well as the lab tests and medication that will ensure she remains healthy after the operation. “This procedure will save Maria’s life,” says WK, “allowing her to be with her husband and seven children, and have a long and healthy life.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -175,21 +174,29 @@
                         <outlet property="patientImageView" destination="AGo-JZ-ggM" id="PGA-Z0-z4E"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQP-Zb-STB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1803" y="356"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fgy-sr-B0V">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gnJ-nE-1iy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="gnJ-nE-1iy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="baZ-6v-cg1">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="baZ-6v-cg1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jRS-Po-PBH">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Tkt-pC-dh3" kind="relationship" relationship="rootViewController" id="ZUe-oh-gki"/>
                     </connections>

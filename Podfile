@@ -6,6 +6,7 @@ use_frameworks!
 target 'watsiOS' do
     pod 'Braintree'
     pod 'Braintree/Apple-Pay'
+    pod 'PNChart'
 end
 
 target 'watsiOSTests' do

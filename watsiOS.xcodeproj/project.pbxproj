@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0431B95FCF29E9886252E12B /* libPods-watsiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC017320F35380CC10A47067 /* libPods-watsiOS.a */; };
 		3C0668AB1CB93E3300B09CD0 /* miso-light-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0668AA1CB93E3300B09CD0 /* miso-light-webfont.ttf */; };
 		3C0668AD1CB99CF200B09CD0 /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C0668AC1CB99CF200B09CD0 /* donate.png */; };
 		3C1B81041CB8B2EB00298D48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B81031CB8B2EB00298D48 /* AppDelegate.swift */; };
@@ -24,6 +23,7 @@
 		3CF530581CB90ED200233225 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CF530571CB90ED200233225 /* logo.png */; };
 		3CF5305A1CB90FC500233225 /* watsi-logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3CF530591CB90FC500233225 /* watsi-logo.jpeg */; };
 		3CF5305C1CB9134B00233225 /* PatientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF5305B1CB9134B00233225 /* PatientDetailViewController.swift */; };
+		7C5BA0884A9225F9A754CC3A /* Pods_watsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32C4FCD6DB1BE4D8F72E92 /* Pods_watsiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,7 @@
 		3CF5305B1CB9134B00233225 /* PatientDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDetailViewController.swift; sourceTree = "<group>"; };
 		3CF5305D1CB9275300233225 /* watsiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "watsiOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		710E98B79BA976044AF4B970 /* Pods-watsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-watsiOS/Pods-watsiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		DC017320F35380CC10A47067 /* libPods-watsiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-watsiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF32C4FCD6DB1BE4D8F72E92 /* Pods_watsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_watsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0431B95FCF29E9886252E12B /* libPods-watsiOS.a in Frameworks */,
+				7C5BA0884A9225F9A754CC3A /* Pods_watsiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +160,8 @@
 		3C1B81361CB8B47800298D48 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3C1B81341CB8B44200298D48 /* PatientProfileTableViewController.swift */,
 				3C1B813C1CB8C36400298D48 /* PatientProfileTableViewCell.swift */,
+				3C1B81341CB8B44200298D48 /* PatientProfileTableViewController.swift */,
 				3CF5305B1CB9134B00233225 /* PatientDetailViewController.swift */,
 			);
 			name = View;
@@ -197,7 +197,7 @@
 		FC87361F367BA757156AF65C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC017320F35380CC10A47067 /* libPods-watsiOS.a */,
+				EF32C4FCD6DB1BE4D8F72E92 /* Pods_watsiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -19,7 +19,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PNChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-watsiOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UICountingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>19D181C5025F664AF56238CC9AB4124E</key>
+		<key>016D982990393D4CF14C8AE7998AEC65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>408BC50E08DC14A45806E1427F0806EA</key>
+		<key>5BE2358F3B176D04FDAD27D6309597FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>48EF180343ABF245EA74FC1C9A70FE24</key>
+		<key>64A645460C762DE4DB759D3569F2CFB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EFF55AEFC3EE261F5CE2D77216D3CD2D</key>
+		<key>6C18C789438292FED01EB702705FC9AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE2B2C48CC33B69585A0DAE15166E248</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EFEB79568B86CD06A8A9073EF078AAD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

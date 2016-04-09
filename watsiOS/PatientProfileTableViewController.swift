@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class PatientProfileTableViewController: UITableViewController {
 
     var patients = [Patient]()
@@ -51,11 +50,13 @@ class PatientProfileTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PatientProfileTableViewCell
         let patient = patients[indexPath.row]
         loadImageForCell(patient, imageView: cell.profilePictureImageView)
-        cell.profilePictureImageView.layer.cornerRadius = 65
+    
+        
+        cell.profilePictureImageView.layer.cornerRadius = 60
         cell.profilePictureImageView.clipsToBounds = true
         cell.profilePictureImageView.layer.borderWidth = 3.0
         cell.profilePictureImageView.layer.borderColor = UIColor.grayColor().CGColor
-        cell.backgroundColor = UIColor(red: 177/256, green: 206/256, blue: 214/256, alpha: 1.0)
+        cell.backgroundColor = UIColor(red: 0/256, green: 178/256, blue: 216/256, alpha: 1.0)
         cell.nameAgeLabel.text = patient.name + ", " + String(patient.age) + " " + patient.ageTag
         cell.countryLabel.text = patient.country
         let whiteRoundedView : UIView = UIView(frame: CGRectMake(0, 10, self.view.frame.size.width, 190))

@@ -82,3 +82,14 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-watsiOS/Braintree.framework"
+  install_framework "Pods-watsiOS/PNChart.framework"
+  install_framework "Pods-watsiOS/UICountingLabel.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-watsiOS/Braintree.framework"
+  install_framework "Pods-watsiOS/PNChart.framework"
+  install_framework "Pods-watsiOS/UICountingLabel.framework"
+fi

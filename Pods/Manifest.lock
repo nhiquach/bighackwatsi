@@ -19,12 +19,18 @@ PODS:
   - Braintree/UI (4.2.3):
     - Braintree/Card
     - Braintree/Core
+  - PNChart (0.8.8):
+    - UICountingLabel (~> 1.2.0)
+  - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
   - Braintree
   - Braintree/Apple-Pay
+  - PNChart
 
 SPEC CHECKSUMS:
   Braintree: 05791bdc6d43c3faf2f802dd2d687e9f619f7f57
+  PNChart: 25f91e9c4688af49c3647489760624d037f5383f
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
 COCOAPODS: 0.39.0
