@@ -30,22 +30,22 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0A-3t-zZj">
-                                            <rect key="frame" x="164" y="42" width="62" height="21"/>
+                                            <rect key="frame" x="164" y="50" width="62" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YiW-WL-tDO">
-                                            <rect key="frame" x="164" y="159" width="305" height="15"/>
+                                            <rect key="frame" x="13" y="172" width="456" height="15"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="305" id="a1Y-fU-a4X"/>
+                                                <constraint firstAttribute="width" constant="456" id="a1Y-fU-a4X"/>
                                                 <constraint firstAttribute="height" constant="15" id="xHC-ei-R8s"/>
                                             </constraints>
-                                            <color key="progressTintColor" red="0.50905080998378249" green="0.86014441287878785" blue="0.33430184048854128" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="progressTintColor" red="0.96862745098039216" green="0.72941176470588232" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="trackTintColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </progressView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw4-Fs-hhX">
-                                            <rect key="frame" x="484" y="156" width="35" height="21"/>
+                                            <rect key="frame" x="484" y="169" width="35" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -69,10 +69,10 @@
                                     <constraints>
                                         <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="v1C-OR-DHs" secondAttribute="leading" id="2nl-bi-rYr"/>
                                         <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="14" id="4cs-Mg-Wh2"/>
-                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="top" secondItem="qAP-RW-H8J" secondAttribute="top" constant="42" id="7KA-8f-Sbk"/>
-                                        <constraint firstItem="fJG-It-6N8" firstAttribute="top" secondItem="p0A-3t-zZj" secondAttribute="bottom" constant="8" symbolic="YES" id="DSM-Zd-AuI"/>
+                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="top" secondItem="qAP-RW-H8J" secondAttribute="top" constant="50" id="7KA-8f-Sbk"/>
+                                        <constraint firstItem="fJG-It-6N8" firstAttribute="top" secondItem="p0A-3t-zZj" secondAttribute="bottom" id="DSM-Zd-AuI"/>
                                         <constraint firstItem="goT-1N-vc0" firstAttribute="leading" secondItem="qAP-RW-H8J" secondAttribute="leadingMargin" constant="5" id="HWe-g0-MZj"/>
-                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="top" secondItem="v1C-OR-DHs" secondAttribute="bottom" constant="-8" id="JPF-Xq-hdz"/>
+                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="top" secondItem="v1C-OR-DHs" secondAttribute="bottom" id="JPF-Xq-hdz"/>
                                         <constraint firstItem="fJG-It-6N8" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="8" id="M30-fl-qgR"/>
                                         <constraint firstItem="v1C-OR-DHs" firstAttribute="top" secondItem="goT-1N-vc0" secondAttribute="top" id="RTw-c5-pu8"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="fJG-It-6N8" secondAttribute="trailing" constant="19" id="Rm2-PF-hpi"/>
@@ -81,10 +81,9 @@
                                         <constraint firstItem="goT-1N-vc0" firstAttribute="top" secondItem="qAP-RW-H8J" secondAttribute="topMargin" constant="10" id="VJr-rI-PV1"/>
                                         <constraint firstItem="fJG-It-6N8" firstAttribute="centerY" secondItem="qAP-RW-H8J" secondAttribute="centerY" constant="10" id="cnJ-ze-ODJ"/>
                                         <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="qAP-RW-H8J" secondAttribute="leading" constant="164" id="dDs-Gq-nLR"/>
-                                        <constraint firstItem="YiW-WL-tDO" firstAttribute="top" secondItem="goT-1N-vc0" secondAttribute="bottom" constant="4" id="gjM-dH-c7e"/>
-                                        <constraint firstItem="YiW-WL-tDO" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="leading" constant="151" id="oID-pv-jhO"/>
-                                        <constraint firstItem="p0A-3t-zZj" firstAttribute="leading" secondItem="YiW-WL-tDO" secondAttribute="leading" id="q0I-3n-Fh3"/>
+                                        <constraint firstItem="YiW-WL-tDO" firstAttribute="top" secondItem="goT-1N-vc0" secondAttribute="bottom" constant="17" id="gjM-dH-c7e"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="YiW-WL-tDO" secondAttribute="trailing" constant="123" id="qXn-JZ-F8O"/>
+                                        <constraint firstItem="YiW-WL-tDO" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="leading" id="ycy-HC-FGR"/>
                                         <constraint firstItem="v1C-OR-DHs" firstAttribute="leading" secondItem="goT-1N-vc0" secondAttribute="trailing" constant="14" id="yrZ-zM-zvP"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -125,14 +124,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA2-EC-Nk5">
-                                <rect key="frame" x="275" y="285" width="50" height="30"/>
-                                <color key="backgroundColor" red="0.91372549020000005" green="0.39607843139999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Donate">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-JZ-ggM">
                                 <rect key="frame" x="158" y="53" width="284" height="227"/>
                                 <constraints>
@@ -141,23 +132,36 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYX-rj-V6f">
-                                <rect key="frame" x="31" y="345" width="525" height="211"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="31" y="344" width="525" height="212"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.7843137255" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <mutableString key="text">I am scared about what could happen,” shares Maria. “But I am glad I have support." 36-year-old Maria lives in a rural region of Guatemala, and delights in caring for her seven children. Maria is currently expecting another baby. For three months Maria has not had regular menstruation, and 15 days ago she started to have hemorrhaging,” explains our medical partner, Wuqu’ Kawoq (WK). “Our medical team suspects she has an ectopic pregnancy based on the results of some preliminary lab tests. In an ectopic pregnancy, the fertilized egg remains in a woman’s fallopian tube instead of moving to the uterus to develop as it should. This means the fertilized egg will not survive, and that the mother is at serious risk for internal damage: for instance, the fallopian tube can rupture, causing dangerous bleeding. “Ectopic pregnancies are fatal to the mother if not treated,” explains WK. Fortunately, treatment is available for Maria. A surgical technique known as laparoscopy can be used to examine Maria’s pelvic organs through a small incision in her abdomen. Doctors will then use a small camera to locate and remove the fertilized egg from her fallopian tube.\r\n\r\nThis operation costs more than Maria and her husband, a day laborer, can afford—especially with seven children to support. But we can help. $977 will fund the surgery that Maria needs, as well as the lab tests and medication that will ensure she remains healthy after the operation. “This procedure will save Maria’s life,” says WK, “allowing her to be with her husband and seven children, and have a long and healthy life.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA2-EC-Nk5">
+                                <rect key="frame" x="261" y="293" width="79" height="39"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.39607843139999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="4HC-fl-mDk"/>
+                                    <constraint firstAttribute="height" constant="39" id="uJ3-Bu-QVz"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Donate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.58039215686274515" green="0.78431372549019607" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="AGo-JZ-ggM" firstAttribute="centerX" secondItem="iA2-EC-Nk5" secondAttribute="centerX" id="4SC-b0-M96"/>
                             <constraint firstItem="AGo-JZ-ggM" firstAttribute="top" secondItem="qMK-VA-eC4" secondAttribute="bottom" constant="33" id="6Ll-MQ-RsR"/>
                             <constraint firstItem="wfL-Q6-f56" firstAttribute="top" secondItem="XYX-rj-V6f" secondAttribute="bottom" constant="44" id="BBZ-TE-jTX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XYX-rj-V6f" secondAttribute="trailing" constant="24" id="GQE-Ux-9jI"/>
                             <constraint firstItem="XYX-rj-V6f" firstAttribute="leading" secondItem="JMi-E5-zx6" secondAttribute="leadingMargin" constant="11" id="Nmt-Ej-pH4"/>
-                            <constraint firstItem="XYX-rj-V6f" firstAttribute="top" secondItem="iA2-EC-Nk5" secondAttribute="bottom" constant="30" id="dVM-Er-oqS"/>
+                            <constraint firstItem="XYX-rj-V6f" firstAttribute="top" secondItem="iA2-EC-Nk5" secondAttribute="bottom" constant="12" id="dVM-Er-oqS"/>
                             <constraint firstItem="iA2-EC-Nk5" firstAttribute="centerX" secondItem="JMi-E5-zx6" secondAttribute="centerX" id="j1e-9k-rMb"/>
-                            <constraint firstItem="iA2-EC-Nk5" firstAttribute="top" secondItem="AGo-JZ-ggM" secondAttribute="bottom" constant="5" id="qdN-nG-AL2"/>
+                            <constraint firstItem="iA2-EC-Nk5" firstAttribute="top" secondItem="AGo-JZ-ggM" secondAttribute="bottom" constant="13" id="qdN-nG-AL2"/>
                         </constraints>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="600" height="600"/>

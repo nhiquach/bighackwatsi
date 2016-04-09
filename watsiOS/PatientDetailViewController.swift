@@ -22,11 +22,14 @@ class PatientDetailViewController: UIViewController, BTDropInViewControllerDeleg
         super.viewDidLoad()
         descriptionTextView.text = loadPatientStory(token)
         patientImageView.image = image
+        patientImageView.layer.borderWidth = 2.0
+        patientImageView.layer.borderColor = UIColor.whiteColor().CGColor
         donateButton.addTarget(self, action: "tappedMyPayButton", forControlEvents: .TouchUpInside)
         braintreeClient = BTAPIClient(authorization: clientToken)
         donateButton.titleLabel!.font = UIFont(name: "Helvetica", size: 20.0)
-        donateButton.layer.cornerRadius = 5
+        donateButton.layer.cornerRadius = 10
         descriptionTextView.font = UIFont(name: "Helvetica", size: 18.0)
+        descriptionTextView.textColor = UIColor.whiteColor()
         descriptionTextView.setContentOffset(CGPoint.zero, animated: false)
     }
     

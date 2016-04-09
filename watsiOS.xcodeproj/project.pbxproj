@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0431B95FCF29E9886252E12B /* libPods-watsiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC017320F35380CC10A47067 /* libPods-watsiOS.a */; };
 		3C0668AB1CB93E3300B09CD0 /* miso-light-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0668AA1CB93E3300B09CD0 /* miso-light-webfont.ttf */; };
+		3C0668AD1CB99CF200B09CD0 /* donate.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C0668AC1CB99CF200B09CD0 /* donate.png */; };
 		3C1B81041CB8B2EB00298D48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B81031CB8B2EB00298D48 /* AppDelegate.swift */; };
 		3C1B81091CB8B2EB00298D48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1B81071CB8B2EB00298D48 /* Main.storyboard */; };
 		3C1B810C1CB8B2EB00298D48 /* watsiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B810A1CB8B2EB00298D48 /* watsiOS.xcdatamodeld */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		3934D6A766C71CBB34AE2FE8 /* Pods-watsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watsiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-watsiOS/Pods-watsiOS.release.xcconfig"; sourceTree = "<group>"; };
 		3C0668AA1CB93E3300B09CD0 /* miso-light-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "miso-light-webfont.ttf"; sourceTree = "<group>"; };
+		3C0668AC1CB99CF200B09CD0 /* donate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donate.png; sourceTree = "<group>"; };
 		3C1B81001CB8B2EB00298D48 /* watsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1B81031CB8B2EB00298D48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C1B81081CB8B2EB00298D48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				3CF530591CB90FC500233225 /* watsi-logo.jpeg */,
+				3C0668AC1CB99CF200B09CD0 /* donate.png */,
 				3CF530571CB90ED200233225 /* logo.png */,
 			);
 			name = images;
@@ -309,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C0668AD1CB99CF200B09CD0 /* donate.png in Resources */,
 				3CF5305A1CB90FC500233225 /* watsi-logo.jpeg in Resources */,
 				3CF530581CB90ED200233225 /* logo.png in Resources */,
 				3C1B81111CB8B2EB00298D48 /* LaunchScreen.storyboard in Resources */,
