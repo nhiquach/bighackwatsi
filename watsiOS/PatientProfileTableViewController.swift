@@ -21,6 +21,7 @@ class PatientProfileTableViewController: UITableViewController {
         
     }
     
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("goToPatientDetail", sender: indexPath)
         
@@ -33,9 +34,7 @@ class PatientProfileTableViewController: UITableViewController {
             let selectedCell = tableView!.cellForRowAtIndexPath(indexPath) as! PatientProfileTableViewCell
             destVC.image = selectedCell.profilePictureImageView!.image
             destVC.token = patients[indexPath.row].token
-            
         }
-        
     }
     
     
