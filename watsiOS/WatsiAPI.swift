@@ -11,6 +11,7 @@ import Foundation
 
 class WatsiAPI {
     
+
     func loadPatients(completion: (([Patient]) -> Void)!) {
         var url: NSURL
         url = NSURL(string: "https://watsi.org/fund-treatments.json")!
@@ -41,5 +42,7 @@ class WatsiAPI {
         task.resume()
     }
     
-
+    func getPatientUrl(token: String) -> String {
+        return "https://watsi.org/profile/\(token).json"
+    }
 }

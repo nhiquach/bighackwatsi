@@ -17,10 +17,9 @@ class PatientProfileTableViewController: UITableViewController {
         super.viewDidLoad()
         let api = WatsiAPI()
         api.loadPatients(initializePatients)
-        self.tableView.backgroundColor = UIColor(red: 0.0/256, green: 178.0/256, blue: 216.0/256, alpha: 1.0)
-
+        self.tableView.backgroundColor = UIColor.whiteColor()
+        
     }
-    
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("goToPatientDetail", sender: indexPath)
@@ -33,6 +32,7 @@ class PatientProfileTableViewController: UITableViewController {
             let indexPath = sender as! NSIndexPath
             let selectedCell = tableView!.cellForRowAtIndexPath(indexPath) as! PatientProfileTableViewCell
             destVC.image = selectedCell.profilePictureImageView!.image
+            destVC.token = patients[indexPath.row].token
             
         }
         
@@ -59,7 +59,6 @@ class PatientProfileTableViewController: UITableViewController {
         cell.backgroundColor = UIColor(red: 177/256, green: 206/256, blue: 214/256, alpha: 1.0)
         cell.nameAgeLabel.text = patient.name + ", " + String(patient.age) + " " + patient.ageTag
         cell.countryLabel.text = patient.country
-        
         let whiteRoundedView : UIView = UIView(frame: CGRectMake(0, 10, self.view.frame.size.width, 190))
         
         whiteRoundedView.layer.backgroundColor = UIColor.whiteColor().CGColor
@@ -74,9 +73,9 @@ class PatientProfileTableViewController: UITableViewController {
         cell.donationProgressView.progressTintColor = UIColor(red: 222/256, green: 128/256, blue: 135/256, alpha: 1.0) 
         cell.goalLabel.text = "Goal: $" + String(patient.target/100)
         cell.headerTextView.text = patient.header
+        cell.headerTextView.font = UIFont(name: "Helvetica", size: 14.0)
         return cell
     }
-    
     func loadImageForCell(patient: Patient, imageView: UIImageView) {
         let url = NSURL(string: patient.profileUrl)
         if ((images[patient.profileUrl]) != nil) {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0431B95FCF29E9886252E12B /* libPods-watsiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC017320F35380CC10A47067 /* libPods-watsiOS.a */; };
+		3C0668AB1CB93E3300B09CD0 /* miso-light-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C0668AA1CB93E3300B09CD0 /* miso-light-webfont.ttf */; };
 		3C1B81041CB8B2EB00298D48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B81031CB8B2EB00298D48 /* AppDelegate.swift */; };
 		3C1B81091CB8B2EB00298D48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C1B81071CB8B2EB00298D48 /* Main.storyboard */; };
 		3C1B810C1CB8B2EB00298D48 /* watsiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C1B810A1CB8B2EB00298D48 /* watsiOS.xcdatamodeld */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		3934D6A766C71CBB34AE2FE8 /* Pods-watsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watsiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-watsiOS/Pods-watsiOS.release.xcconfig"; sourceTree = "<group>"; };
+		3C0668AA1CB93E3300B09CD0 /* miso-light-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "miso-light-webfont.ttf"; sourceTree = "<group>"; };
 		3C1B81001CB8B2EB00298D48 /* watsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C1B81031CB8B2EB00298D48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C1B81081CB8B2EB00298D48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		3CF530571CB90ED200233225 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		3CF530591CB90FC500233225 /* watsi-logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "watsi-logo.jpeg"; sourceTree = "<group>"; };
 		3CF5305B1CB9134B00233225 /* PatientDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientDetailViewController.swift; sourceTree = "<group>"; };
+		3CF5305D1CB9275300233225 /* watsiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "watsiOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		710E98B79BA976044AF4B970 /* Pods-watsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-watsiOS/Pods-watsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DC017320F35380CC10A47067 /* libPods-watsiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-watsiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,7 +126,9 @@
 				3C1B81361CB8B47800298D48 /* View */,
 				3C1B81031CB8B2EB00298D48 /* AppDelegate.swift */,
 				3C1B81371CB8B54600298D48 /* WatsiAPI.swift */,
+				3C0668AA1CB93E3300B09CD0 /* miso-light-webfont.ttf */,
 				3C1B81071CB8B2EB00298D48 /* Main.storyboard */,
+				3CF5305D1CB9275300233225 /* watsiOS-Bridging-Header.h */,
 				3C1B810D1CB8B2EB00298D48 /* Assets.xcassets */,
 				3C1B810F1CB8B2EB00298D48 /* LaunchScreen.storyboard */,
 				3C1B81121CB8B2EB00298D48 /* Info.plist */,
@@ -309,6 +314,7 @@
 				3C1B81111CB8B2EB00298D48 /* LaunchScreen.storyboard in Resources */,
 				3C1B810E1CB8B2EB00298D48 /* Assets.xcassets in Resources */,
 				3C1B81091CB8B2EB00298D48 /* Main.storyboard in Resources */,
+				3C0668AB1CB93E3300B09CD0 /* miso-light-webfont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bighack.watsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "watsiOS/watsiOS-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -544,6 +551,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bighack.watsiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "watsiOS/watsiOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
